@@ -21,27 +21,6 @@ body {
   padding: 0 0.75rem;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 90%;
-  }
-  .header {
-    margin: 1.5rem 0;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -146,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .alphabet-container {
   position: relative;
-  width: 6rem;
+  width: 5.45rem;
   height: 3rem;
   padding-bottom: 0.5rem;
   margin: 0 0 1.5rem 0;
@@ -237,6 +216,30 @@ h1, h2, h3, h4, h5, h6 {
     &.syllable .rhyme {
       color: $ivy-blue;
     }
+  }
+}
 
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .header {
+    margin: 1.5rem 0;
+  }
+  .alphabet-container {
+    width: 6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
   }
 }
