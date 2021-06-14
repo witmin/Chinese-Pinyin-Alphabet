@@ -21,22 +21,6 @@ body {
   padding: 0 0.75rem;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-  .header {
-    margin: 3rem 0;
-  }
-}
-
-@media (min-width: 960px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
