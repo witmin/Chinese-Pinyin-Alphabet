@@ -4,11 +4,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Yuanti SC', 'Monaco', 'Comic Sans MS', sans-serif;
+  font-family: 'Comic Sans MS', 'Yuanti SC', sans-serif;
 }
 
 [lang="en"] {
-  font-family: -apple-system, BlinkMacSystemFont, 'Monaco', 'Comic Sans MS', sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
 }
 
 * {
@@ -17,16 +17,36 @@ body {
 
 .container {
   min-height: 100vh;
-  margin: 0 1rem;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .header {
+    margin: 3rem 0;
+  }
 }
 
 @media (min-width: 960px) {
   .container {
     max-width: 960px;
-    margin: 0 auto;
   }
-  .header {
-    margin: 3rem 0;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
   }
 }
 
@@ -47,10 +67,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.875rem;
     text-decoration: none;
     line-height: 1;
+    font-family: 'Yuanti SC', sans-serif;
   }
 
   a {
-
     color: $base-color;
 
     &:visited {
@@ -68,7 +88,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sub-title {
-  letter-spacing: 0.13em;
+  font-family: 'Yuanti SC', sans-serif;
+  letter-spacing: 0.16em;
 }
 
 // Section
@@ -80,11 +101,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
   font-weight: normal;
   margin: 1.5rem 0;
+  font-family: 'Yuanti SC', sans-serif;
 
   [lang="en"] {
     font-weight: normal;
     font-size: 0.875rem;
     margin-left: 0.5rem;
+    font-family: 'Yuanti SC', sans-serif;
+
   }
 
   &.consonant {
@@ -105,11 +129,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0 0 0.5rem 0;
   color: $ivy-blue;
+  font-family: 'Yuanti SC', sans-serif;
 
   [lang="en"] {
     margin: 0.25rem 0 0.5rem 0;
     display: block;
     font-size: 0.75rem;
+    font-family: 'Yuanti SC', sans-serif;
   }
 }
 
@@ -128,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .alphabet-container {
   position: relative;
-  width: 5rem;
+  width: 6rem;
   height: 3rem;
   padding-bottom: 0.5rem;
   margin: 0 0 1.5rem 0;
