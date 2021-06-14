@@ -72,7 +72,7 @@ const integralSyllables = [
         consonant: 'y',
         rhyme: 'ing'
     },
-];
+]; // 整体认读音节16个
 
 export default function Home() {
     // 声母列表
