@@ -2,7 +2,7 @@
 A web version Pinyin Alphabet. Built in [Next.js](https://nextjs.org/) and [SASS](https://sass-lang.com/).
 
 ## Demo
-[https://chinese-pinyin-alphabet.vercel.app/](https://chinese-pinyin-alphabet.vercel.app/)
+[https://chinese-pinyin-alphabet.millielin.com/](https://chinese-pinyin-alphabet.millielin.com/)
 
 ## Screenshot
 ![screenshot](./public/screenshot.png)
