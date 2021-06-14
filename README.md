@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This is an application for Chinese Pinyin Table.
+
+Built in [Next.js](https://nextjs.org/)

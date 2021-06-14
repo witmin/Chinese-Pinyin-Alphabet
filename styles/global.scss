@@ -1,0 +1,131 @@
+@import "variables";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Yuanti SC', 'Monaco', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  margin: 0 1rem;
+}
+
+a {
+  color: $base-color;
+  font-size: 0.75rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: $title-color;
+  font-weight: normal;
+  margin-right: 1.5rem;
+}
+
+// Section
+.section-title {
+  font-size: 1.25rem;
+  font-weight: normal;
+  &.initials {
+    color: $initial-alphabet-color;
+  }
+  &.finals {
+    color: $final-alphabet-color;
+  }
+}
+
+// List
+.alphabets-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin: 1.5rem 0 3rem 0;
+  padding: 0;
+}
+
+.alphabet-container {
+  position: relative;
+  width: 5rem;
+  height: 3rem;
+  padding-bottom: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  background: transparent;
+  text-align: center;
+
+  .four-line-score {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid $four-line-score-purple-1;
+    border-bottom: 2px solid $four-line-score-purple-1;
+
+    &.initial {
+      border-top-color: $four-line-score-purple-1;
+      border-bottom-color: $four-line-score-purple-1;
+    }
+
+    &.final {
+      border-top-color: $four-line-score-purple-1;
+      border-bottom-color: $four-line-score-purple-1;
+    }
+
+    &:before, &::before {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      margin-top: -2px;
+      background: $four-line-score-purple-2;
+      z-index: -1;
+    }
+
+    &:after, &::after {
+      content: '';
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      margin-top: -2px;
+      background: $four-line-score-purple-2;
+      z-index: -1;
+    }
+  }
+
+  .alphabet {
+    font-size: 2.125rem;
+    font-weight: normal;
+    line-height: 1;
+
+    &.initial {
+      color: $initial-alphabet-color;
+    }
+
+    &.final {
+      color: $final-alphabet-color;
+    }
+  }
+}
