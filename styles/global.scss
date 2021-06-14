@@ -4,11 +4,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Comic Sans MS', 'Yuanti SC', sans-serif;
+  font-family: $alphabet-font-family;
 }
 
 [lang="en"] {
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: $english-font-family;
 }
 
 * {
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.875rem;
     text-decoration: none;
     line-height: 1;
-    font-family: 'Yuanti SC', sans-serif;
+    font-family: $yuanti-family;
   }
 
   a {
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sub-title {
-  font-family: 'Yuanti SC', sans-serif;
+  font-family: $yuanti-family;
   letter-spacing: 0.16em;
 }
 
@@ -93,13 +93,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
   font-weight: normal;
   margin: 1.5rem 0;
-  font-family: 'Yuanti SC', sans-serif;
+  font-family: $yuanti-family;
 
   [lang="en"] {
     font-weight: normal;
     font-size: 0.875rem;
     margin-left: 0.5rem;
-    font-family: 'Yuanti SC', sans-serif;
+    font-family: $yuanti-family;
 
   }
 
@@ -121,13 +121,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0 0 0.5rem 0;
   color: $ivy-blue;
-  font-family: 'Yuanti SC', sans-serif;
+  font-family: $yuanti-family;
 
   [lang="en"] {
     margin: 0.25rem 0 0.5rem 0;
     display: block;
     font-size: 0.75rem;
-    font-family: 'Yuanti SC', sans-serif;
+    font-family: $yuanti-family;
   }
 }
 
