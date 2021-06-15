@@ -70,14 +70,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: lighter;
   margin: 1.5rem 0;
   font-family: $yuanti-family;
 
   [lang="en"] {
+    display: block;
     font-weight: normal;
     font-size: 0.875rem;
-    margin-left: 0.5rem;
+    margin: 0.25rem 0 0 0;
     font-family: $yuanti-family;
 
   }
@@ -223,6 +224,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+footer p {
+  color: $dark-gray;
+  font-family: $yuanti-family;
+}
 
 @media (min-width: 768px) {
   .container {

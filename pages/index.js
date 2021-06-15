@@ -126,7 +126,6 @@ export default function Home() {
                     <h1 className="title" lang="zh-hans">汉语拼音字母表</h1>
                     <span lang="en" className="sub-title">Chinese Pinyin Alphabet</span>
                 </div>
-                <span>Created by <a href="https://www.millielin.com">Millie Lin</a></span>
             </header>
             <main>
                 {/*    声母表    */}
@@ -168,6 +167,9 @@ export default function Home() {
                 </section>
 
             </main>
+            <footer>
+                <p>Created by <a href="https://www.millielin.com">Millie Lin</a></p>
+            </footer>
         </div>
     )
 }
