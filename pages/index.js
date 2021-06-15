@@ -90,13 +90,13 @@ export default function Home() {
     // 复韵母列表
     const compoundRhymesListItems = compoundRhymes.map((rhyme, index) =>
         <li className="alphabet-container" key={index}>
-            <span className="four-line-score rhyme"> </span> <span className="alphabet rhyme">{rhyme}</span>
+            <span className="four-line-score rhyme"> </span> <span className={`alphabet rhyme ${rhyme==='üe'?'reduce-kerning':''}`}>{rhyme}</span>
         </li>
     )
     // 前鼻韵母列表
     const frontNoseRhymesListItems = frontNoseRhymes.map((rhyme, index) =>
         <li className="alphabet-container" key={index}>
-            <span className="four-line-score rhyme"> </span> <span className="alphabet rhyme">{rhyme}</span>
+            <span className="four-line-score rhyme"> </span> <span className={`alphabet rhyme ${rhyme==='ün'?'reduce-kerning':''}`}>{rhyme}</span>
         </li>
     )
     // 后鼻韵母列表
