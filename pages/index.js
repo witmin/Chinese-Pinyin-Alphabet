@@ -90,13 +90,15 @@ export default function Home() {
     // 复韵母列表
     const compoundRhymesListItems = compoundRhymes.map((rhyme, index) =>
         <li className="alphabet-container" key={index}>
-            <span className="four-line-score rhyme"> </span> <span className={`alphabet rhyme ${rhyme==='üe'?'reduce-kerning':''}`}>{rhyme}</span>
+            <span className="four-line-score rhyme"> </span>
+            <span className={`alphabet rhyme ${rhyme === 'üe' ? 'reduce-kerning' : ''}`}>{rhyme}</span>
         </li>
     )
     // 前鼻韵母列表
     const frontNoseRhymesListItems = frontNoseRhymes.map((rhyme, index) =>
         <li className="alphabet-container" key={index}>
-            <span className="four-line-score rhyme"> </span> <span className={`alphabet rhyme ${rhyme==='ün'?'reduce-kerning':''}`}>{rhyme}</span>
+            <span className="four-line-score rhyme"> </span>
+            <span className={`alphabet rhyme ${rhyme === 'ün' ? 'reduce-kerning' : ''}`}>{rhyme}</span>
         </li>
     )
     // 后鼻韵母列表
@@ -117,8 +119,8 @@ export default function Home() {
         <div className="container">
             <Head>
                 <title>汉语拼音字母表 Chinese Pinyin Alphabet</title>
-
-                <link rel="icon" href="/favicon.ico"/>
+                <meta name="description" content="汉语拼音字母表在线版，带有四线格，包括声母、韵母和整体认读音节。 Chinese Pinyin Alphabet which includes 26 consonants, 24 vowels and 16 integral syllables." />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <header className="header">
@@ -171,5 +173,5 @@ export default function Home() {
                 <p>Created by <a href="https://www.millielin.com">Millie Lin</a></p>
             </footer>
         </div>
-    )
+)
 }
