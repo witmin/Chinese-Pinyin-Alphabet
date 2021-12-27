@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.875rem;
     text-decoration: none;
     line-height: 1;
-    font-family: $yuanti-family;
+    font-family: $chinese-family;
   }
 
   a {
@@ -51,16 +51,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
+  font-family: $chinese-family;
   font-size: 1.75rem;
   color: $title-color;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0 1.5rem 0 0;
   line-height: 1.5;
 }
 
 .sub-title {
-  font-family: $yuanti-family;
+  font-family: $chinese-family;
   letter-spacing: 0.16em;
+  font-weight: bold;
 }
 
 // Section
@@ -72,14 +74,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
   font-weight: normal;
   margin: 1.5rem 0;
-  font-family: $yuanti-family;
+  font-family: $chinese-family;
 
   [lang="en"] {
     display: block;
     font-weight: normal;
     font-size: 0.875rem;
     margin: 0.25rem 0 0 0;
-    font-family: $yuanti-family;
+    font-family: $chinese-family;
 
   }
 
@@ -101,13 +103,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0 0 1rem 0;
   color: $rhyme-alphabet-color;
-  font-family: $yuanti-family;
+  font-family: $chinese-family;
 
   [lang="en"] {
     margin: 0.25rem 0 0.5rem 0;
     display: block;
     font-size: 0.75rem;
-    font-family: $yuanti-family;
+    font-family: $chinese-family;
   }
 }
 
@@ -201,6 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.125rem;
     font-weight: normal;
     line-height: 1;
+    margin-top: 4px;
 
     &.consonant {
       color: $consonant-alphabet-color;
@@ -226,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
 
 footer p {
   color: $dark-gray;
-  font-family: $yuanti-family;
+  font-family: $chinese-family;
 }
 
 @media (min-width: 768px) {
