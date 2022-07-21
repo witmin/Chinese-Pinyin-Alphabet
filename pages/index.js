@@ -170,7 +170,7 @@ export default function Home() {
 
             </main>
             <footer>
-                <p>Created by <a href="https://www.millielin.com">Millie Lin</a></p>
+                <p>Created by <a href="https://www.millielin.com/blog/2021-05-30-chinese-pinyin-chart/">Millie Lin</a></p>
             </footer>
         </div>
 )
